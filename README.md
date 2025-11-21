@@ -62,43 +62,79 @@ O **Credentia+** é um sistema desenvolvido em C++ para resolver os desafios de 
 | **Separação de Interface/Implementação** | Arquivos .hpp e .cpp para cada módulo |
 
 ## 📦 Estrutura do Projeto
+
 Credentia/
-├── include/ # Cabeçalhos (.hpp)
-│ ├── MainInterno.hpp
-│ ├── Participante.hpp
-│ ├── Evento.hpp
-│ ├── AreaAtividades.hpp
-│ ├── Palestrante.hpp
-│ ├── Instituicao.hpp
-│ ├── Certificados.hpp
-│ └── ValidadorCPF.hpp
+├── include/                         # Cabeçalhos (.hpp)
+│   ├── MainInterno.hpp
+│   ├── Participante.hpp
+│   ├── Evento.hpp
+│   ├── AreaAtividades.hpp
+│   ├── Palestrante.hpp
+│   ├── Instituicao.hpp
+│   ├── Certificados.hpp
+│   └── ValidadorCPF.hpp
 │
-├── src/ # Implementações (.cpp)
-│ ├── MainInterno.cpp
-│ ├── Participante.cpp
-│ ├── Evento.cpp
-│ ├── AreaAtividades.cpp
-│ ├── Palestrante.cpp
-│ ├── Instituicao.cpp
-│ ├── Certificados.cpp
-│ └── ValidadorCPF.cpp
+├── src/                            # Implementações (.cpp)
+│   ├── MainInterno.cpp
+│   ├── Participante.cpp
+│   ├── Evento.cpp
+│   ├── AreaAtividades.cpp
+│   ├── Palestrante.cpp
+│   ├── Instituicao.cpp
+│   ├── Certificados.cpp
+│   └── ValidadorCPF.cpp
 │
-├── data/ # Arquivos de dados
-│ ├── Participante.txt
-│ ├── Evento.txt
-│ ├── Instituicao.txt
-│ ├── palestrantes.txt
-│ ├── atividades.txt
-│ ├── inscricoes.txt
-│ ├── lista_espera.txt
-│ ├── InscricoesEvento.txt
-│ ├── global_id_participante.txt
-│ ├── global_id_instituicao.txt
-│ ├── global_id_evento.txt
-│ └── global_id_palestrantes.txt
+├── data/                           # Arquivos de dados
+│   ├── Participante.txt
+│   ├── Evento.txt
+│   ├── Instituicao.txt
+│   ├── palestrantes.txt
+│   ├── atividades.txt
+│   ├── inscricoes.txt
+│   ├── lista_espera.txt
+│   ├── InscricoesEvento.txt
+│   ├── certificados/
+│   │   ├── palestrante/
+│   │   ├── minicurso/
+│   │   └── participacao/
+│   ├── global_id_participante.txt
+│   ├── global_id_instituicao.txt
+│   ├── global_id_evento.txt
+│   └── global_id_palestrantes.txt
 │
 ├── docs/
-│ └── relatorio.md # Documentação completa
+│   ├── relatorio.md
+│   ├── manual-usuario.md
+│   └── diagramas/
 │
-├── Makefile # Script de compilação
+├── tests/                          # Testes unitários
+│   ├── test_validador_cpf.cpp
+│   ├── test_participante.cpp
+│   └── test_arquivos.cpp
+│
+├── scripts/                        # Scripts auxiliares
+│   ├── compilar.sh
+│   ├── limpar_dados.sh
+│   └── backup_dados.sh
+│
+├── Makefile
+├── CMakeLists.txt                  # Configuração CMake
 └── README.md
+
+## 🚀 Como Usar
+
+### Pré-requisitos
+
+- Compilador C++ compatível com C++17 (GCC, Clang, ou MSVC)
+- Sistema operacional: Windows, Linux ou macOS
+- Make (opcional, para usar o Makefile)
+
+### Compilação e Execução
+
+#### Opção 1: Compilação Manual
+```bash
+# Compilar todos os arquivos
+g++ -std=c++17 -I include -o credentia src/*.cpp
+
+# Executar o sistema
+./credentia
