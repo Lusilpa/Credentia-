@@ -61,66 +61,6 @@ O **Credentia+** é um sistema desenvolvido em C++ para resolver os desafios de 
 | **CRUD** | Operações completas de Create, Read, Update, Delete |
 | **Separação de Interface/Implementação** | Arquivos .hpp e .cpp para cada módulo |
 
-## 📦 Estrutura do Projeto
-
-Credentia/
-├── include/                         # Cabeçalhos (.hpp)
-│   ├── MainInterno.hpp
-│   ├── Participante.hpp
-│   ├── Evento.hpp
-│   ├── AreaAtividades.hpp
-│   ├── Palestrante.hpp
-│   ├── Instituicao.hpp
-│   ├── Certificados.hpp
-│   └── ValidadorCPF.hpp
-│
-├── src/                            # Implementações (.cpp)
-│   ├── MainInterno.cpp
-│   ├── Participante.cpp
-│   ├── Evento.cpp
-│   ├── AreaAtividades.cpp
-│   ├── Palestrante.cpp
-│   ├── Instituicao.cpp
-│   ├── Certificados.cpp
-│   └── ValidadorCPF.cpp
-│
-├── data/                           # Arquivos de dados
-│   ├── Participante.txt
-│   ├── Evento.txt
-│   ├── Instituicao.txt
-│   ├── palestrantes.txt
-│   ├── atividades.txt
-│   ├── inscricoes.txt
-│   ├── lista_espera.txt
-│   ├── InscricoesEvento.txt
-│   ├── certificados/
-│   │   ├── palestrante/
-│   │   ├── minicurso/
-│   │   └── participacao/
-│   ├── global_id_participante.txt
-│   ├── global_id_instituicao.txt
-│   ├── global_id_evento.txt
-│   └── global_id_palestrantes.txt
-│
-├── docs/
-│   ├── relatorio.md
-│   ├── manual-usuario.md
-│   └── diagramas/
-│
-├── tests/                          # Testes unitários
-│   ├── test_validador_cpf.cpp
-│   ├── test_participante.cpp
-│   └── test_arquivos.cpp
-│
-├── scripts/                        # Scripts auxiliares
-│   ├── compilar.sh
-│   ├── limpar_dados.sh
-│   └── backup_dados.sh
-│
-├── Makefile
-├── CMakeLists.txt                  # Configuração CMake
-└── README.md
-
 ## 🚀 Como Usar
 
 ### Pré-requisitos
@@ -138,3 +78,68 @@ g++ -std=c++17 -I include -o credentia src/*.cpp
 
 # Executar o sistema
 ./credentia
+
+Estratégia de Persistência
+Formato: Campos com prefixos e delimitadores "---"
+
+IDs: Sistema global auto-incrementado por arquivo
+
+Operações: Leitura/escrita sequencial com arquivos temporários para updates
+
+Separação de Cabeçalhos e Implementação
+Headers (.hpp): Declarações de classes, structs, protótipos de funções, includes guards
+
+Implementação (.cpp): Definições de métodos, lógica de negócio
+
+Inclusões: Sistema organizado com -I include para includes limpos
+
+🐛 Solução de Problemas
+Erros Comuns de Compilação
+Problema: Error: undefined reference to...
+Solução: Certifique-se de que todos os arquivos .cpp estão sendo compilados
+
+Problema: Error: file not found
+Solução: Verifique o caminho dos includes use -I include
+
+Problema: Erros de linker
+Solução: Compile todos os arquivos .cpp juntos ou crie um Makefile
+
+Problema: Multiple definition
+Solução: Verifique se há includes guards (#ifndef #define #endif) em todos os headers
+
+🤝 Contribuição
+Contribuições são bem-vindas! Para contribuir:
+
+Fork o projeto
+
+Crie uma branch para sua feature (git checkout -b feature/AmazingFeature)
+
+Commit suas mudanças (git commit -m 'Add some AmazingFeature')
+
+Push para a branch (git push origin feature/AmazingFeature)
+
+Abra um Pull Request
+
+Diretrizes de Código
+Use .hpp para headers e .cpp para implementações
+
+Mantenha includes guards em todos os headers
+
+Siga o estilo de código existente
+
+Adicione comentários para novas funcionalidades complexas
+
+Teste as mudanças antes de submeter
+
+📄 Licença
+Este projeto está sob a licença MIT. Veja o arquivo LICENSE para detalhes.
+
+👥 Autores
+Equipe Credentia+ - Desenvolvimento e Documentação
+
+🙏 Agradecimentos
+FUCAPI - Pelo contexto real de aplicação
+
+ENCOENG - Pelos desafios práticos de gestão de eventos
+
+Comunidade C++ - Pelas referências e boas práticas
