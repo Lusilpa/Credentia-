@@ -100,3 +100,29 @@ Credentia/
 │
 ├── Makefile                  # Script de compilação
 └── README.md
+
+```
+## 👥 Equipe de Desenvolvimento
+
+Este projeto foi desenvolvido colaborativamente com foco na aplicação de conceitos de Engenharia de Software e programação C++.
+
+### 🚀 Liderança Técnica
+
+| Membro | Papel | Contribuições Principais |
+| :--- | :--- | :--- |
+| **Luan Palma** | **Tech Lead & Full-Stack** | Liderança de equipe, arquitetura limpa do sistema e outras adaptações |
+
+### 💻 Desenvolvedores Full-Stack
+
+| Membro | Foco de Desenvolvimento | Detalhes da Implementação |
+| :--- | :--- | :--- |
+| **Gabrielle Santiago Oliveira** | Módulo de Certificados | Lógica de geração e emissão de certificados baseada na participação. |
+| **Igor Kramer dos Santos** | Gestão de Entidades | Desenvolvimento das áreas de **Participantes** e **Palestrantes**. |
+| **João Pedro da Cunha** | Módulo Institucional | Implementação da área de Instituição, autenticação e configurações. |
+| **Jennifer Kalyne Lima Frota** | Operações de Dados | Implementação e otimização das operações **CRUD** e manipulação de registros. |
+| **Pedro Henrique F. Macedo** | Operações de Dados | Implementação e otimização das operações **CRUD** e manipulação de registros. |
+
+##🙏 Agradecimentos
+FUCAPI: Pelos conhecimentos oferecidos, estudo de caso e 
+ENCOENG: Pela oportunidade de testar a solução em escala.
+📄 Licença: Este projeto está sob a licença MIT. Consulte o arquivo LICENSE para mais detalhes.
