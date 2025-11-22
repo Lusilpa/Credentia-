@@ -4,7 +4,7 @@
 
 [![C++](https://img.shields.io/badge/C++-17-blue.svg?logo=c%2B%2B)](https://isocpp.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-orange.svg)]()
+[![Status]([![Status](https://img.shields.io/badge/Status-Concluído-brightgreen.svg)]())]()
 
 > **Solução offline especializada para gestão de eventos acadêmicos de grande porte.**
 
@@ -122,7 +122,10 @@ Este projeto foi desenvolvido colaborativamente com foco na aplicação de conce
 | **Jennifer Kalyne Lima Frota** | Operações de Dados | Implementação e otimização das operações **CRUD** e manipulação de registros. |
 | **Pedro Henrique F. Macedo** | Operações de Dados | Implementação e otimização das operações **CRUD** e manipulação de registros. |
 
-##🙏 Agradecimentos
-FUCAPI: Pelos conhecimentos oferecidos, estudo de caso e 
-ENCOENG: Pela oportunidade de testar a solução em escala.
+## 🙏 Agradecimentos
+
+Gostaríamos de expressar nossa gratidão às instituições e comunidades que tornaram este projeto possível:
+
+* **🏛️ FUCAPI:** Pela base de conhecimentos oferecida no curso, pelo cenário real de estudo de caso e pela valiosa oportunidade de exposição do projeto no **13° Encontro Regional de Engenharia (ENCOENG)**.
+* **🌐 Comunidade C++:** Pelo suporte contínuo através de documentações open-source e pela manutenção de um ecossistema robusto que serviu de referência para as boas práticas aplicadas neste projeto.
 📄 Licença: Este projeto está sob a licença MIT. Consulte o arquivo LICENSE para mais detalhes.
