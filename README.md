@@ -4,7 +4,6 @@
 
 [![C++](https://img.shields.io/badge/C++-17-blue.svg?logo=c%2B%2B)](https://isocpp.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Status]([![Status](https://img.shields.io/badge/Status-Concluído-brightgreen.svg)]())]()
 
 > **Solução offline especializada para gestão de eventos acadêmicos de grande porte.**
 
