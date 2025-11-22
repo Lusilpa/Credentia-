@@ -127,4 +127,5 @@ Gostaríamos de expressar nossa gratidão às instituições e comunidades que t
 
 * **🏛️ FUCAPI:** Pela base de conhecimentos oferecida no curso, pelo cenário real de estudo de caso e pela valiosa oportunidade de exposição do projeto no **13° Encontro Regional de Engenharia (ENCOENG)**.
 * **🌐 Comunidade C++:** Pelo suporte contínuo através de documentações open-source e pela manutenção de um ecossistema robusto que serviu de referência para as boas práticas aplicadas neste projeto.
+
 📄 Licença: Este projeto está sob a licença MIT. Consulte o arquivo LICENSE para mais detalhes.
