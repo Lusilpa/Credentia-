@@ -13,7 +13,7 @@
 
 O **Credentia+** é um sistema desenvolvido em C++ para resolver os desafios de gestão de eventos acadêmicos na região Norte do Brasil, onde a infraestrutura de internet é limitada. 
 
-Criado inicialmente para atender o **ENCOENG da FUCAPI**, o sistema oferece uma alternativa robusta e **totalmente offline** aos sistemas comerciais dependentes de conectividade constante.
+Criado inicialmente para atender limitações do **ENCOENG da FUCAPI**, o sistema oferece uma alternativa **totalmente offline** aos sistemas comerciais dependentes de conectividade constante.
 
 ### 🎯 Problema Solucionado
 * 📡 **Dependência de internet:** Elimina falhas em regiões com infraestrutura instável.
@@ -109,7 +109,7 @@ Este projeto foi desenvolvido colaborativamente com foco na aplicação de conce
 
 | Membro | Papel | Contribuições Principais |
 | :--- | :--- | :--- |
-| **Luan Palma** | **Tech Lead & Full-Stack** | Liderança de equipe, arquitetura limpa do sistema e outras adaptações |
+| **Luan Palma** | **Tech Lead & Full-Stack** | Liderança de equipe, código limpo, arquitetura do sistema e outras adaptações |
 
 ### 💻 Desenvolvedores Full-Stack
 
